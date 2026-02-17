@@ -42,34 +42,24 @@ Not implemented yet (planned next):
 
 1. Load and inspect loan dataset
 2. Split into train/test with stratification
-3. Exclude `LoanID` from model features
-4. Build preprocessing with:
+3. Build preprocessing with:
    - `StandardScaler` for numeric variables
    - `OneHotEncoder(handle_unknown="ignore", drop="if_binary")` for categorical/binary variables
-5. Train Logistic Regression in a single `Pipeline`
-6. Evaluate with ROC-AUC
-7. Save fitted pipeline artifact via `joblib`
+4. Train Logistic Regression in a single `Pipeline`
+5. Evaluate with ROC-AUC
+6. Save fitted pipeline artifact via `joblib`
 
 ## Scoring Workflow (Implemented)
 
 1. Load saved artifact (`pd_pipeline.joblib`)
 2. Read full dataset
-3. Keep `LoanID` for downstream joins
-4. Score all rows with `predict_proba(... )[:, 1]`
-5. Save predictions to `data/loan_risk_scores.csv`
+3. Score all rows with `predict_proba(... )[:, 1]`
+4. Save predictions to `data/loan_risk_scores.csv`
 
 Output format:
-
 - `LoanID`: primary key
 - `risk_score`: predicted probability of default (0 to 1)
 
-## Why This Matters
-
-The generated `risk_score` table can be joined back to the original loan dataset by `LoanID`, enabling:
-
-- risk decile analysis
-- segment-level default behavior analysis
-- business dashboards for monitoring portfolio quality
 
 ## Next Steps (To Complete Full Workflow)
 
@@ -77,7 +67,7 @@ The generated `risk_score` table can be joined back to the original loan dataset
 
 Build SQL queries to answer portfolio risk questions, for example:
 
-- Default rate by risk decile (`NTILE(10)`)
+- Default rate by risk decile
 - Segment comparisons (employment type, education, loan purpose, etc.)
 - Distribution and concentration of high-risk loans
 - Aggregations with CTEs and window functions
