@@ -1,0 +1,11 @@
+LoanID,Age,Income,LoanAmount,CreditScore,MonthsEmployed,NumCreditLines,InterestRate,LoanTerm,DTIRatio,Education,EmploymentType,MaritalStatus,HasMortgage,HasDependents,LoanPurpose,HasCoSigner,Default,risk_score,expected_loss
+D8D4VAFUAQ,19,40603,248104,503,0,2,21.44,48,0.86,Bachelor's,Unemployed,Single,No,No,Other,Yes,1,0.9558135812654527,142285
+XE0EEE6ZWQ,21,41508,248677,541,4,3,22.23,12,0.34,"High School",Part-time,Divorced,Yes,No,Auto,No,1,0.95129309775734,141939
+FDEGWJQ2NA,18,18232,245477,469,4,1,22.21,24,0.65,Bachelor's,Unemployed,Divorced,No,Yes,Business,Yes,1,0.9543386255577867,140561
+L5WFUMRC06,25,25360,247516,589,0,4,19.67,36,0.6,Bachelor's,Self-employed,Divorced,Yes,No,Education,No,1,0.9442658872428384,140233
+IPUD4HZ8AK,18,55362,249418,367,44,2,19.98,12,0.64,Master's,Unemployed,Divorced,No,No,Education,No,1,0.9359984726481659,140073
+BN46346B4V,22,59931,248150,387,59,3,24.88,60,0.58,"High School",Self-employed,Divorced,No,No,Education,No,1,0.940374866080316,140012
+H1F55IDYR6,21,96423,249341,406,16,4,23.52,60,0.27,Bachelor's,Unemployed,Divorced,No,No,Other,Yes,1,0.9355254341360864,139959
+U6XP72UJYU,37,23347,247027,339,18,4,20.92,24,0.86,"High School",Unemployed,Divorced,No,No,Business,Yes,1,0.943126508480057,139787
+YH7ACUS5S8,21,45553,248186,598,19,3,23.72,60,0.36,PhD,Part-time,Married,No,No,Business,No,0,0.9331976152039726,138964
+HSN953ESC5,30,24186,247535,668,32,4,24.01,36,0.36,"High School",Unemployed,Married,Yes,No,Business,No,0,0.9334725393965582,138640

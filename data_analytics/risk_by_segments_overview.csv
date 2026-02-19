@@ -1,0 +1,58 @@
+segment_type,segment_value,segment_order,number_of_loans,default_rate,avg_risk_score
+Age,"18 - 25",1,39016,0.2076,0.61
+Age,"25 - 35",2,49408,0.1608,0.536
+Age,"36 - 50",3,73749,0.1079,0.4316
+Age,"51 - 65",4,73682,0.0645,0.3111
+Age,65+,5,19492,0.0460,0.244
+CreditScore,Poor,1,130223,0.1247,0.4507
+CreditScore,Fair,2,41847,0.1143,0.4229
+CreditScore,Good,3,32073,0.1063,0.4108
+CreditScore,"Very Good",4,27736,0.1050,0.3996
+CreditScore,Exceptional,5,23468,0.0981,0.3893
+DTIRatio,"< 25%",1,46146,0.1056,0.4093
+DTIRatio,"25% - 40%",2,47943,0.1125,0.4185
+DTIRatio,"40% - 55%",3,47793,0.1167,0.4281
+DTIRatio,"55% - 70%",4,47936,0.1200,0.4371
+DTIRatio,"> 70%",5,65529,0.1229,0.449
+Education,"High School",1,63903,0.1288,0.457
+Education,Bachelor's,2,64366,0.1210,0.4413
+Education,Master's,3,63541,0.1087,0.4132
+Education,PhD,4,63537,0.1059,0.408
+EmploymentType,Full-time,1,63656,0.0946,0.3811
+EmploymentType,Part-time,2,64161,0.1197,0.4364
+EmploymentType,Self-employed,3,63706,0.1146,0.4308
+EmploymentType,Unemployed,4,63824,0.1355,0.4713
+HasCoSigner,No,1,127646,0.1287,0.4562
+HasCoSigner,Yes,2,127701,0.1036,0.4037
+HasDependents,No,1,127605,0.1272,0.4556
+HasDependents,Yes,2,127742,0.1050,0.4044
+HasMortgage,No,1,127670,0.1235,0.4468
+HasMortgage,Yes,2,127677,0.1088,0.4131
+Income,"< 40k",1,47243,0.1903,0.5223
+Income,"40k - 70k",2,56601,0.1139,0.476
+Income,"70k - 95k",3,47445,0.0989,0.4274
+Income,"95k - 120k",4,47414,0.0929,0.3874
+Income,"> 120k",5,56644,0.0903,0.3447
+InterestRate,"< 6%",1,44149,0.0614,0.297
+InterestRate,"6% - 11%",2,56010,0.0825,0.357
+InterestRate,"11% - 16%",3,55605,0.1109,0.4284
+InterestRate,"16% - 20%",4,43982,0.1421,0.4953
+InterestRate,"> 20%",5,55601,0.1782,0.5589
+LoanAmount,"< 50k",1,47090,0.0806,0.3474
+LoanAmount,"50k - 100k",2,51976,0.0944,0.3862
+LoanAmount,"100k - 150k",3,51880,0.1116,0.4274
+LoanAmount,"150k - 200k",4,51980,0.1325,0.4683
+LoanAmount,"> 200k",5,52421,0.1579,0.512
+LoanPurpose,Education,1,51005,0.1184,0.4351
+LoanPurpose,Auto,2,50844,0.1188,0.4341
+LoanPurpose,Home,3,51286,0.1023,0.3995
+LoanPurpose,Business,4,51298,0.1233,0.4481
+LoanPurpose,Other,5,50914,0.1179,0.4329
+LoanTerm,12,50957,1,0.1162,0.429
+LoanTerm,24,51009,2,0.1161,0.4304
+LoanTerm,36,51061,3,0.1157,0.4294
+LoanTerm,60,51154,5,0.1170,0.431
+LoanTerm,48,51166,4,0.1157,0.4299
+MaritalStatus,Single,1,85012,0.1191,0.4367
+MaritalStatus,Married,2,85302,0.1040,0.406
+MaritalStatus,Divorced,3,85033,0.1253,0.4473
