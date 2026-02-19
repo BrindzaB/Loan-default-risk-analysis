@@ -220,7 +220,6 @@ WITH credit_score_segment AS (SELECT	'CreditScore' AS segment_type,
 
 	loan_term_segment AS (SELECT 	'LoanTerm' AS segment_type,
 									LoanTerm AS segment_value,
-									COUNT(*) AS number_of_loans,
                                     CASE
 										WHEN LoanTerm = 12 THEN 1
                                         WHEN LoanTerm = 24 THEN 2
@@ -228,6 +227,7 @@ WITH credit_score_segment AS (SELECT	'CreditScore' AS segment_type,
                                         WHEN LoanTerm = 48 THEN 4
                                         WHEN LoanTerm = 60 THEN 5
 									END AS segment_order,
+                                    COUNT(*) AS number_of_loans,
 									AVG(`Default`) AS default_rate,
 									ROUND(AVG(risk_score), 4) AS avg_risk_score
 						  FROM ld_with_rs

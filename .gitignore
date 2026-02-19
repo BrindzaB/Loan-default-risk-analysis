@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 *.joblib
 .DS_Store
+Loan_default_risk_vizualisation
