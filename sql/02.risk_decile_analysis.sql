@@ -1,7 +1,7 @@
 -- Model Validation - Risk Decile Analysis
 
 WITH risk_deciles AS (SELECT 	*,
-								NTILE(10) OVER (ORDER BY risk_score DESC) AS risk_decile
+								NTILE(10) OVER (ORDER BY risk_score) AS risk_decile
 					  FROM ld_with_rs)
 
 SELECT 	risk_decile,
