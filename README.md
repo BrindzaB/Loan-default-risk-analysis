@@ -99,21 +99,3 @@ Exported analysis outputs for Tableau:
 
 [![Joblib](https://img.shields.io/badge/joblib-Model%20Serialization-4C78A8?style=flat-square)](https://joblib.readthedocs.io/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://jupyter.org/)
-
-
-## Important Modeling Note
-
-The current model is useful for **ranking risk** but is still too strict on **absolute probability calibration**:
-
-- ROC-AUC is around **0.75**, which indicates reasonable ranking/discrimination.
-- Observed portfolio default rate is about **11.6%**.
-- Average predicted risk score is about **43%**.
-
-This means the model tends to overestimate default probability levels, so calibration is not yet aligned for production-style PD interpretation.
-
-### Next Steps
-
-1. Evaluate calibration explicitly.
-2. Apply probability calibration.
-3. Re-check decile ranking and calibration gap after calibration.
-4. Use calibrated PD values for policy/cutoff decisions and expected loss reporting.
