@@ -82,8 +82,7 @@ Exported analysis outputs for Tableau:
 
 ## Tableau Screenshot
 
-![Dashboard Overview](assets/tableau/overview.png)
-![Cutoff Simulation](assets/tableau/cutoff.png)
+![Dashboard Overview](assets/tableau/dashboard.png)
 
 ## Tech Stack
 

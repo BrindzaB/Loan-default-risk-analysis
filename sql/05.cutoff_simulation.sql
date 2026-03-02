@@ -1,9 +1,11 @@
-WITH cutoffs AS (SELECT 0.30 AS cutoff UNION ALL
-				 SELECT 0.40 UNION ALL
-				 SELECT 0.50 UNION ALL
-				 SELECT 0.60 UNION ALL
-				 SELECT 0.70 UNION ALL
-				 SELECT 0.80),
+WITH cutoffs AS (SELECT 0.04 AS cutoff UNION ALL
+				 SELECT 0.08 UNION ALL
+				 SELECT 0.12 UNION ALL
+				 SELECT 0.16 UNION ALL
+				 SELECT 0.20 UNION ALL
+				 SELECT 0.24 UNION ALL
+                 SELECT 0.28 UNION ALL
+                 SELECT 0.32),
 	 totals AS (SELECT	COUNT(*) AS total_loans,
 						SUM(`Default`) AS total_defaults,
                         SUM(risk_score * 0.6 * LoanAmount) AS total_expected_loss
